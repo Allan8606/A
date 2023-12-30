@@ -13,24 +13,8 @@ h1 {
 }
 
 img {
-    height: 250px;
-    width: 425px;
-    margin-top: 20px;
-    grid-column: 1;
-}
-
-.descricao {
-    grid-column: 2;
-    text-align: center;
-    place-self: center;
-}
-
-.preco {
-    font-weight: 600;
-    font-style: italic;
-    color: #a6033f;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    max-width: 100%;
+    margin-top: 30px;
 }
 
 .container {
@@ -38,20 +22,17 @@ img {
     height: 800px;
     grid-template-columns: auto auto;
     gap: 20px;
-
-    justify-content: space-around;
 }
 
 .cidades {
     background-color: #111;
     color: white;
     border: 2px solid #a6033f;
-    padding: 30px;
-    margin-bottom: 10px;
+    padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 4px;
-    line-height: 25px;
+    line-height: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -62,6 +43,21 @@ img {
     grid-column: 1/-1;
 }
 
+.info {
+    place-self: start;
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    place-items: start;
+    margin-left: 15px;
+}
+
+.preco {
+    font-weight: 600;
+    font-style: italic;
+    color: #a6033f;
+}
+
 a {
     background: #c0cc39;
     color: #111;
@@ -69,7 +65,5 @@ a {
     border-radius: 4px;
     font-weight: 600;
     padding: 10px;
-    margin-top: 10px;
-    grid-column: 1/-1;
     text-align: center;
 }
